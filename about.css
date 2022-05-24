@@ -1,0 +1,194 @@
+#about-body {
+    background-color: rgb(245, 241, 235);
+    background-color: rgb(255, 254, 252);
+    font-family: 'Karla', sans-serif;
+    color:rgb(69, 58, 61);
+    margin:0;
+}
+
+#about-header {
+    padding-bottom: 200px;
+    background-color: rgb(245, 241, 235);
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar img {
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+#about-nav-links {
+    display: flex;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+
+li { 
+    text-decoration: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+#about-nav-links a {
+    color:rgb(82, 80, 81);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#about-nav-links a:hover {
+    color: rgb(227, 99, 91);
+    transition: 0.4s;
+}
+
+#bio-banner {
+    background-color: rgb(245, 241, 235);
+    padding-bottom: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#bio-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245, 241, 235);
+}
+
+#bio {
+    width: 500px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+#bio-box img {
+    width: 700px;
+    margin-left: 50px;
+}
+
+#span {
+    font-size: 1.2em;
+}
+
+#quote {
+    padding-top: 100px;
+    color: rgb(128, 64, 4);
+    font-size: 24px;
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 1.5;
+}
+
+#kara-tag {
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+#about-banner {
+    background-color: rgb(255, 254, 252);
+    padding-left: 100px;
+    padding-top: 100px;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+#about-banner::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 68%;
+    background-image: url("images/owlwing.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.05;
+}
+
+#about-banner img {
+    width: 650px;
+    margin-top: 100px;
+    padding-bottom: 150px;
+    z-index: 3;
+}
+
+#about-banner a {
+    text-decoration: none;
+    color: rgb(128, 118, 93);
+    font-weight: 500;
+}
+
+#about-banner a:hover {
+    color: rgb(214, 91, 77);
+    transition: 0.3s;
+}
+
+
+#container3 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: rgb(245, 241, 235);
+    margin-left: 30px;
+    margin-right: 30px;
+    color: rgb(69, 58, 61);
+    border-radius: 10px 10px 0 0;
+}
+
+.block {
+    /*border: 2px solid rgb(255, 254, 252);*/
+    border-radius: 5%;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+#color-text {
+    color: rgb(78, 120, 83);
+
+}
+
+                            /*FOOTER*/
+
+
+footer {
+    padding-bottom: 100px;
+    background-color: rgb(245, 241, 235);
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+}
+
+#logo {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px rgba(168, 124, 111, 0.1);
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+#copyright {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+    color: rgb(78, 120, 83);
+}
+
+#indent {
+    display: block;
+    text-indent: 0.6em;
+}
+
