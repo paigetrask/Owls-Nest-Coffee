@@ -11,6 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="images/owllogo.jpg">
+        <script src="https://kit.fontawesome.com/7ead0b9cde.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
@@ -22,25 +23,35 @@
         <![endif]-->
         
        <header id="hero">
+           <img src="images/cafewideshot.jpg" id="hero-img">
            <nav id="navbar">
                 <div>
                     <img src="images/owlsnesticon2.jpg" id="nav-icon">
                 </div>
+                
+                <button class="mobile-nav-toggle" aria-controls="nav-links" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                </button>
 
                 <div>
-                    <ul id="nav-links">
-                        <li><a href="#hero">home</a></li>
-                        <li><a href="/about.html">about</a></li>
-                        <li><a href="#contact">contact</a></li>
+                    <ul id="nav-links" data-visible="false">
+                        <li><a href="index.html" id="home-link">home</a></li>
+                        <li><a href="/about.html" id="about-link">about</a></li>
+                        <li><a href="#contact" id="contact-link">contact</a></li>
                     </ul>
+    
                 </div>
+                
+                
            </nav>
-
+           
            <h1 id="title">OWL'S NEST COFFEE</h1>
 
        </header>
 
-       <div id="banner">
+
+
+       <div id="refuge-banner">
            <p>A place of refuge for visitors, patients and staff.</p>
        </div>
 
@@ -68,7 +79,7 @@
             </div>
        </div>
 
-       <div id="container3">
+       <div id="contact-info-container">
             <div id="hours" class="block">
                 <p><span id="color-text">Hours</span><br><br>Mon-Fri | 8-3</p>
             </div>
@@ -91,6 +102,6 @@
             </div>
         </footer>
 
-        <script src="" async defer></script>
+        <script src="index.js"></script>
     </body>
 </html>
