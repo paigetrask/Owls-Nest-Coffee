@@ -87,15 +87,15 @@ li {
 #title {
     font-family: 'Poiret One', cursive;
     color: white;
-    font-size: 9vw;
+    font-size: 12vw;
     letter-spacing: 8px;
     padding-left: 10px;
     padding-right: 10px;
     position: absolute;
     bottom: 0;
     left: 30px;
+    margin-bottom: 40px;
 }
-
 
 @media screen and (max-width: 768px) {
 
@@ -169,8 +169,16 @@ li {
     #title {
         font-size: 13vw;
         width: 200px;
+        bottom: 70px;
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    #title {
+        font-size: 15vw;
+        bottom: 100px;
+    }
 }
 
 
@@ -341,8 +349,11 @@ li {
 
 #exterior-image-text a {
     text-decoration: none;
-    color: rgb(184, 65, 51)
+    color: rgb(184, 65, 51);
+    z-index: 2000;
+    position: relative;
 }
+
 #exterior-image-text a:hover {
     color: rgb(214, 91, 77);
     transition: 0.3s;
