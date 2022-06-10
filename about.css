@@ -173,11 +173,6 @@ li {
 
                             /*BIO BANNER*/
 
-/*#wrapper {
-    padding-top: 80px;
-    background-color: rgb(255, 254, 252)
-}*/
-
 #bio-banner {
     background-color: rgb(245, 241, 235);
     padding-bottom: 120px;
@@ -357,6 +352,11 @@ li {
     margin-right: 30px;
     color: rgb(69, 58, 61);
     border-radius: 10px 10px 0 0;
+}
+
+#contact a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .block {
