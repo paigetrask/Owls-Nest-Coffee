@@ -22,18 +22,10 @@ body.stop-transitions * {
                             /*NAVBAR AND HERO*/              
 
 #hero {
-    
     background: url(images/cafewideshot.jpg) no-repeat center center;
     background-size: cover;
     height: 800px;
     position: relative;
-}
-
-#hero-img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
 }
 
 #navbar {
@@ -98,7 +90,9 @@ li {
 }
 
 @media screen and (max-width: 768px) {
-
+    #hero {
+        height: 750px;
+    }
 
     #navbar img {
         width: 100px;
@@ -114,7 +108,7 @@ li {
 
         gap: 2em;
     
-        z-index: 1000;
+        z-index: 0;
         flex-direction: column;
         align-items: center;
         
@@ -127,7 +121,7 @@ li {
     }
 
     #nav-links[data-visible="true"] {
-
+        z-index: 2000;
         opacity: 1;
         transition: .5s;
         
@@ -175,12 +169,35 @@ li {
 }
 
 @media screen and (max-width: 480px) {
+    #hero {
+        height: 600px;
+    }
+
+    #navbar img {
+        width: 70px;
+    }
+
+    .mobile-nav-toggle {
+        top: .6rem;
+        right: .6rem;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        top: 1.25rem;
+        right: 1.25rem;
+    }
+
     #title {
         font-size: 15vw;
-        bottom: 100px;
+        bottom: 50px;
     }
 }
 
+@media screen and (max-height: 480px) {
+    #title {
+        bottom: 100px;
+    }
+}
 
 
                             /*REFUGE BANNER AND IMAGE TRIO*/
@@ -194,17 +211,22 @@ li {
 
 #image-trio {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 125px;
-    margin-left: 60px;
-    margin-right: 60px;
+    justify-content: center;
+    margin-bottom: 50px;
+    /*margin: 0 30px 55px 30px;*/
 }
 
-#image-trio img {
-    
+#image-trio img { 
     width: 28vw;
-    
-    padding: 20px 1%;
+    min-width: 375px;
+    padding: 15px 1%;
+}
+
+@media screen and (max-width: 1200px) {
+    #image-trio img {
+        width: 30vw;
+        min-width: 0;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -214,12 +236,12 @@ li {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1023px) {
     #image-trio {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 75px;
+        margin: 0 0 40px 0;
     }
 
     #image-trio img {
@@ -232,9 +254,14 @@ li {
     #refuge-banner {
         padding: 100px 5%;
     }
+}
 
-    #image-trio {
-        margin-bottom: 40px;
+@media screen and (max-width: 480px) {
+    #image-trio img {
+        max-width: 100%;
+        width: 100%;
+        min-width: 300px;
+        padding: 5px 0;
     }
 }
 
@@ -296,24 +323,18 @@ li {
         bottom: 0px;
         left: -68%;
     }
-}
 
-@media screen and (max-width: 1023px) {
-   body #single-image-text {
+    body #single-image-text {
         font-size: 22px;
-        margin-top: 40px;
+        padding: 40px;
+    }
+
+    #single-image img {
+        padding: 0 0 50px 0;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #single-image-text {
-        padding: 20px;
-    }
-
-    #single-image img {
-        padding: 40px;
-    }
-
     #single-image::before {
         
         position: absolute;
@@ -466,10 +487,6 @@ footer {
 }
 
 #copyright {
-   /* position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 15px;*/
     color: rgb(78, 120, 83);
 }
 
