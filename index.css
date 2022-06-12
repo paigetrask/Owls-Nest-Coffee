@@ -172,7 +172,7 @@ li {
 
 @media screen and (max-width: 480px) {
     #hero {
-        height: 650px;
+        height: 625px;
     }
 
     #navbar img {
@@ -259,11 +259,16 @@ li {
 }
 
 @media screen and (max-width: 480px) {
+    #image-trio {
+        margin: 0 10px 5px 10px;
+    }
+
     #image-trio img {
         max-width: 100%;
         width: 100%;
         min-width: 300px;
         padding: 5px 0;
+        border-radius: 15px;
     }
 }
 
@@ -304,9 +309,15 @@ li {
 
 #single-image img {
     max-width: 100%;
-    width: 400px;
-    padding: 80px;
+    width: 375px;
+    padding: 60px;
     z-index: 3;
+}
+
+@media screen and (max-width: 1200px) {
+    #single-image img{
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -328,7 +339,7 @@ li {
 
     body #single-image-text {
         font-size: 22px;
-        padding: 40px;
+        padding: 100px 0 100px 0;
     }
 
     #single-image img {
@@ -345,6 +356,18 @@ li {
         right: 0px;
         bottom: 0px;
         left: -88%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #single-image {
+        padding: 0 10px 10px 10px;
+    }
+
+    #single-image img {
+        width: 100%;
+        padding: 0;
+        
     }
 }
 
@@ -366,7 +389,7 @@ li {
 #exterior-image-text {
     font-size: 2vw;
     color: rgb(69, 58, 61);
-    padding: 40px;
+    padding: 100px 0;
 }
 
 #exterior-image-text a {
