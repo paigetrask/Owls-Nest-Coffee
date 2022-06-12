@@ -41,8 +41,8 @@ navToggle.addEventListener("click", () => {
 
 
 contactLink.addEventListener("click", () => {
-    navLinks.setAttribute('data-visible', false)
-    navToggle.setAttribute('aria-expanded', false)
+    navLinks.setAttribute('data-visible', false);
+    navToggle.setAttribute('aria-expanded', false);
     document.body.classList.remove("no-scroll");
 })
 
@@ -53,8 +53,8 @@ homeLink.addEventListener("click", () => {
 })
 
 aboutLink.addEventListener("click", () => {
-    navLinks.setAttribute('data-visible', false)
-    navToggle.setAttribute('aria-expanded', false)
+    navLinks.setAttribute('data-visible', false);
+    navToggle.setAttribute('aria-expanded', false);
     document.body.classList.remove("no-scroll");
 })
 
